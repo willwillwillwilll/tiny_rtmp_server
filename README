@@ -1,0 +1,26 @@
+tiny_rtmp_server - tiny rtmp server for Adobe Flash player
+
+Copyright 2018 Wang Lilun <58271417@qq.com>
+
+Program code is licensed with GNU LGPL 2.1. See COPYING.LGPL file.
+
+Janne Kulmala <janne.t.kulmala@iki.fi>
+
+-----
+
+RTMPServer can be used to stream live video/audio content to Adobe Flash 
+player clients over RTMP protocol. It is similar to using Adobe's Flash 
+Server (FMS). The server is written to be lightweight and easy to 
+understand, while having good performance. The server does not support 
+authentication of either the clients or the publisher. Written in C++ and 
+STL.The server receive h264 frames, then encapsule to RTMP message.
+
+-----
+the tiny_rtmp_server is based on RTMPServer,which author "Janne Kulmala <janne.t.kulmala@iki.fi>".
+origin 	https://github.com/janneku/rtmpserver.git
+
+-----
+test:
+1.execute tiny_rtmp_server in bin directory
+2.ffplay rtmp://ip/live 
+
